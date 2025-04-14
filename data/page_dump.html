@@ -1,0 +1,367 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+   <title>Virginia Business Opportunities</title>
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css"> 
+	  <!-- Bootstrap 4 core CSS -->
+    <link rel="stylesheet" href="../boot4/css/bootstrap.min.css">
+	
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/navbar-static-top.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/vendorportal.css">
+	<!-- <link href="css/offcanvas.css" rel="stylesheet"> -->
+	
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+	
+	<!-- <script src="js/offcanvas.js"></script>  -->
+	
+	<script src="../include/evamobile.js?v=2"></script>
+	
+	
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  </head>
+
+  <body class="bodybackground">
+
+		<script>
+   function openQuickQuote(){
+	  var currentURL = encodeURIComponent(document.URL);
+	  window.location= "../private/RedirectToQQIntermediate.jsp?SourcePg="+currentURL;
+   }
+ 
+ function openB2BList(){
+	var currentURL = encodeURIComponent(document.URL);
+	window.location= "../public/B2BFullList.jsp?SourcePg="+currentURL;
+ }
+</script>
+
+<nav class="navbar navbar-expand-md bg-white navbar-light topnavbackground">
+<a class="navbar-brand navtext headerfont " href="../public/AllOpportunities.jsp" role="button" aria-haspopup="true" aria-expanded="false"><img alt="eVA" height="90%" src="../images/eva.jpg"></a>
+	 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="collapsibleNavbar">
+    <ul class="navbar-nav flex-nowrap  dropdown_wrap dropdown_wrap_mob" style="width:70%;"  >
+	 
+		<li class="nav-item ">
+			<a class="nav-link" href="../private/MyLeads.jsp"  role="button">
+				<span onclick="Javascript:resetNotificationCounter();" class="fa topnavbuttons" style="font-size:1.25em">My Leads&nbsp;<span class="fa topnavbuttons" title="Notifications" style="font-size:1.25em"><span class="badge badgecount" id="count"></span></span></span>
+			</a>
+			<ul class="dropdown-menu notificationlist notification-custom contentbox-align" id="notificationlist">
+			</ul>
+		 </li> 	
+		 
+	    <li class="dropdown nav-item ">
+			<a class="nav-link dropdown" data-toggle="dropdown" data-target="dropdown2" href="#" role="button" aria-haspopup="true" aria-expanded="false">			
+				<span id="MyBusinessTopfullview" class="fa fa-briefcase topnavbuttons" title="My Business" style="font-size:1.25em">&nbsp;My Business</span>
+			</a>
+			<div>
+				<ul class="dropdown-menu evacustom-ul-nevertransparent dropdown-custom " id="dropdown2">		
+				
+				<li class=""><a id="responses" class="evacustom-a-nevertransparent" style="font-size:1.1em" target="_blank" href="">Responses</a></li>	
+               
+				<li class=""><a id="orders" class="evacustom-a-nevertransparent" style="font-size:1.1em" target="_blank" href="">Orders</a></li>
+
+               <li class=""><a id="contracts" class="evacustom-a-nevertransparent" style="font-size:1.1em" target="_blank" href="">Contracts</a></li>	
+
+               <li class=""><a id="billingInvoice" class="evacustom-a-nevertransparent" style="font-size:1.1em" target="_blank" href="https://evabilling.dgs.virginia.gov/DGScustLogin.aspx">Billing</a></li>	
+					
+					<li class=""><a id="eVABillingInvoice" class="evacustom-a-nevertransparent" style="font-size:1.1em" target="_blank" href="https://evabilling.dgs.virginia.gov/DGScustLogin.aspx">eVA Billing Invoice</a></li>					
+
+               <li class=""><a class="evacustom-a-nevertransparent" style="font-size:1.1em" href="../private/MyB2B.jsp">B2B Posts</a></li>	
+
+               <li class=""><a id="subContractorPay" style="font-size:1.1em" class="evacustom-a-nevertransparent" target="_blank" href="">Subcontractor Payments</a></li>					
+               <li class=""><a id="acctMaintenance" style="font-size:1.1em" class="evacustom-a-nevertransparent" target="_blank" href="">Account/Profile</a></li>					
+				  
+				<!--	<li class=""><a class="evacustom-a-nevertransparent" style="font-size:1.1em" href="../private/MyLeads.jsp">Leads</a></li> -->
+
+				<!--	<li class=""><a class="evacustom-a-nevertransparent" style="font-size:1.1em" href="../private/MyFav.jsp">Favorites</a></li> -->
+
+					
+					
+				<!--	<li class="divider"></li> -->
+					
+
+				
+					
+					
+					
+					
+					
+					
+				<!--	<li class="divider"></li> -->
+					
+				<!--	<li class=""><a class="evacustom-a-nevertransparent" style="font-size:1.1em" target="_self" href="Javascript:openQuickQuote();">Quick Quotes</a></li> -->
+					
+					
+               				
+
+				</ul>
+			</div>
+		</li>		 
+		
+	    <li class="nav-item">
+            <a class=" nav-link" href="../public/AllOpportunities.jsp" role="button">			
+              <span id="OpportunitiesTopfullview" class="fa fa-search  topnavbuttons " title="Find Opportunities" style="font-size:1.25em">&nbsp;All Opportunities</span>			  
+		    </a>		  
+	    </li>
+		 
+        <li class="nav-item">
+			<a class="nav-link" href="Javascript:openB2BList();"><span id="searchlinkfullview" class="fa fa-handshake  topnavbuttons" title="B2B Connect" style="font-size:1.25em">&nbsp;B2B Connect</span></a>
+        </li>		 
+		  
+		<li class="nav-item">
+			<a class="nav-link" href="../public/BusinessExchange.jsp"><span id="searchlinkfullview" class="fa fa-globe-americas  topnavbuttons" title="Virginia Information Business Exchange" style="font-size:1.25em">&nbsp;VIBE</span></a>
+		</li>		  
+		<li class="nav-item">
+			<a class="nav-link" href="../public/PublicSearch.jsp"><span id="searchlinkfullview" class="fa fa-briefcase  topnavbuttons" title="Search Orders, Suppliers & Contracts" style="font-size:1.25em">&nbsp;Transparency</span></a>
+		</li>
+		<!-- <li class="dropdown nav-item ">
+            <a class=" nav-link dropdown " data-toggle="dropdown" data-target="dropdown1" href="#" role="button" aria-haspopup="true" aria-expanded="false">			
+              <span id="OpportunitiesTopfullview" class="fa fa-search  topnavbuttons " title="Find Opportunities" style="font-size:1.25em">&nbsp;Find Opportunities</span>			  
+		    </a>
+                                
+		    <ul class="dropdown-menu evacustom-ul-nevertransparent dropdown-custom " id="dropdown1">
+			  <h6 class="dropdown-header">Public Sector</h6>
+		      <li class=""><a class="evacustom-a-nevertransparent" style="font-size:1.1em" href="../public/AllOpportunities">
+		         Search Solicitations & Quick Quotes </a></li>
+		      <li class=""><a class="evacustom-a-nevertransparent" style="font-size:1.1em" href="Javascript:openB2BList();">
+		         Partnering Opportunities (B2B Connect) </a></li>
+			
+	 
+			  <li class="divider"></li>
+				<h6 class="dropdown-header">Private Sector</h6>
+			  <li class=""><a class="evacustom-a-nevertransparent" style="font-size:1.1em" href="../public/BusinessExchange?posttype=Advertisement">Search Ads</a></li>
+			  <li class=""><a class="evacustom-a-nevertransparent" style="font-size:1.1em" href="../public/BusinessExchange?posttype=Business%20Card">Search Profiles</a></li>
+			
+		    </ul>
+	    </li> -->
+
+	
+		<!--Begin Business Exchange-->
+
+	  <!--End Business Exchange-->
+	  
+
+    </ul>  
+	<ul class="navbar-nav flex-nowrap mr-auto d-md-block d-none" style="width:10%;"></ul>
+	<ul class="navbar-nav flex-nowrap mr-auto d-md-none d-block" style="width:2%;"></ul>
+    <ul class="navbar-nav flex-nowrap mr-auto display_drop display_drop_mob">
+		<!--<li class="nav-item ">
+			<a onclick="Javascript:callme();" class="nav-link dropdown-toggle nolineheight" data-toggle="dropdown">
+				<span class="fa fa-envelope topnavbuttons" title="Notifications" style="font-size:1.25em"><span class="badge badgecount" id="count"></span></span>
+			</a>
+			<ul class="dropdown-menu notificationlist notification-custom contentbox-align" id="notificationlist">
+			</ul>
+		 </li> -->
+		 <li class="dropdown nav-item ">
+            <a onclick="Javascript:updateUser();" id="profileAnc" role="button" class="nav-link dropdown-toggle nolineheight" data-toggle="dropdown" data-target="dropdown3"> 
+                <span class="fa fa-user d-md-none d-block" id="usericonsm" title="Profile"></span> 
+			   	<span style="color:#126d8c !important;" class="d-md-block d-none">
+					<span class="fa fa-user" title="Profile" id="usericon" style="font-size:1.25em"></span>
+					<span id="displayLoginName" class="far" style="font-size:1.15em"></span>
+				</span>
+			</a>
+			<ul class="dropdown-menu evacustom-ul-nevertransparent dropdown-custom" id="dropdown3" name="dropdown3">
+				<span  style="display:none;" id="spanHidelogout"><li class="d-md-none d-block"><span style="color:#126d8c !important;" class="far evacustom-span-nevertransparent" id="displayLoginNameMob"></span></li>
+				<li class="divider d-md-none d-block"></li></span>
+				<li class="" id="signinout"><a class="evacustom-a-nevertransparent" href="../../login">Log In</a></li>
+				<li class="divider"></li>
+				<li class=""><a id="registration" class="evacustom-a-nevertransparent" target="_blank" href="">Register</a></li>
+				<li class="divider"></li>
+				<li class=""><a id="acctMaintenance1" class="evacustom-a-nevertransparent" target="_blank" href="">Account/Profile</a></li>
+				<li class=""><a id="administration" class="evacustom-a-nevertransparent" target="_blank" href="">Administration</a></li>
+				<li class="divider"></li>
+				<li class=""><a class="evacustom-a-nevertransparent" target="_blank" href="https://eva.virginia.gov/get-help-customer-care.html">Help and Contact </a></li>
+			</ul>
+		</li>
+	</ul>  
+  </div>	<!--End non Collapsing Nav Bar-->
+<!--  
+  </div>-->
+</nav><!-- /.navbar -->
+	   
+
+<div class="modal fade" id="loginConfirmation" tabindex="-1" role="dialog" aria-labelledby="loginConfirmationTitle" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header evacardheader ">
+        <h5 class="modal-title" style="font-weight:bold;" id="loginConfirmationTitle">Login Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="font-size:1.35rem;">
+        Please log in to save an opportunity to your Favorites.
+      </div>
+      <div class="modal-footer">
+      	<a class="btn  btn-info actionbutton buttonstyle" id="loginConfirm" onclick="" style="font-size: 1.5rem;color:white;width:60px;height:30px;">Login</a>
+        <button type="button" class="btn btn-secondary buttonstyle" data-dismiss="modal" style="width:60px;height:30px;">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addToFavSuccess" tabindex="-1" role="dialog" aria-labelledby="addToFavSuccessTitle" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header evacardheader ">
+        <h5 class="modal-title" style="font-weight:bold;" id="addToFavSuccessTitle">Success - Added to Favorites</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+      	<a class="btn  btn-info actionbutton buttonstyle" id="viewFav" onclick="" style="font-size: 1.5rem;color:white;width:110px;height:30px;">View Favorites</a>
+        <button type="button" class="btn btn-secondary buttonstyle" data-dismiss="modal" style="width:60px;height:30px;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Virginia Business Opportunities</title>
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css"> 
+	  <!-- Bootstrap 4 core CSS -->
+    <link rel="stylesheet" href="../boot4/css/bootstrap.min.css">
+	
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/navbar-static-top.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/vendorportal.css">
+	<link rel="stylesheet" href="../css/myoppsearch.css" />
+	<link href="../css/offcanvas2.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="../css/all.min.css">
+	
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+	
+	
+	<script src="../include/evamobile.js"></script>
+	<script src="../js/vendorportal.js"></script>
+	
+	
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  </head>
+
+  <body class="bodybackground">
+  
+ 
+	<div class="container-fluid " style ="padding-top:15px;" id="alloppsearcharea"></div> 
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+  
+    <script src="../js/jquery.min.js"></script>
+	<!-- Bootstrap 4 -->
+	<script src="../boot4/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+	<!-- for truncation control of text data -->
+	<script src="../js/clamp.js"></script>
+	    <script src="../js/Chart.bundle.min.js"></script>
+    <script src="../js/Chart.min.js"></script>
+    <script src="../js/offcanvas2.js"></script> 
+  <script type="text/javascript" src="../public/AllOpportunitiesapp.js"></script></body>
+</html>
+
+
+
+
+
+
+<link rel="stylesheet" href="../css/all.min.css">
+	<script>
+		getCount();
+	</script>
+
+	
+		<script>document.getElementById("eVABillingInvoice").style.display = "none";</script>
+	
+			<script>
+				document.getElementById("usericon").classList.add("topnavbuttons");
+			 	document.getElementById("usericonsm").classList.add("topnavbuttons");
+			</script>
+		
+
+<script>document.getElementById("spanHidelogout").style.display = "none";</script>
+		<script>document.getElementById("administration").style.display = "none";</script>
+
+
+	 					 
+	<script>document.getElementById("responses").href="https://procure.cgieva.com/page.aspx/en/rfp/request_browse_extranet";</script>
+	<script>document.getElementById("orders").href="https://procure.cgieva.com/page.aspx/en/ord/order_browse_extranet";</script>
+	<script>document.getElementById("contracts").href="https://procure.cgieva.com/page.aspx/en/ctr/contract_browse_extranet";</script>
+	<script>document.getElementById("subContractorPay").href="https://procure.cgieva.com/page.aspx/en/ctr/sub_report_browse_extranet";</script>
+	<script>document.getElementById("acctMaintenance").href="https://procure.cgieva.com/page.aspx/en/buy/homepage/sup";</script>	 
+	<script>document.getElementById("acctMaintenance1").href="https://procure.cgieva.com/page.aspx/en/buy/homepage/sup";</script>
+   <script>document.getElementById("registration").href="https://procure.cgieva.com/page.aspx/en/sup/registration_extranet_manage";</script>	
+    <script type="text/javascript">
+		$(document).ready(function() {			
+			var errorMsg = "null";
+			
+            var loggedUser = "null";
+            if(errorMsg != null && errorMsg == "true" && loggedUser != null && loggedUser != "")
+			{
+				alert("Your account is NOT ACTIVE. For questions regarding this account please contact eVA Customer Care at 866-289-7367.");
+			}
+            
+            var alertMsg = "null";
+    		
+    		
+    		if(alertMsg != null && alertMsg == "true")
+    		{
+    			alert("Your account is not active. Please contact eVA Customer Care@ 1-866-289-7367 for additional information.");
+    		}
+		});
+	</script>
+</head>
+
+</html>
+
+</html>
