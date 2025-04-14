@@ -1,4 +1,4 @@
-from dotenv import load_dotenv # type: ignore
+from dotenv import load_dotenv  # type: ignore
 import os
 
 from scraper.eva_scraper import EvaScraper
@@ -7,6 +7,9 @@ from agent.filter_agent import filter_opportunities  # Optional
 
 # Load environment variables
 load_dotenv()
+
+# TEMP DEBUG: make sure OPENAI_API_KEY is loading properly
+print(">> OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY"))
 
 # Initialize scraper
 scraper = EvaScraper()
