@@ -1,16 +1,20 @@
-from scraper.eva_scraper import fetch_opportunities
-from pprint import pprint
+from dotenv import load_dotenv # type: ignore
+import os
 
-def main():
-    print("🔍 Fetching latest eVA opportunities...\n")
-    opportunities = fetch_opportunities(limit=5)
-    
-    for i, opp in enumerate(opportunities, 1):
-        print(f"🧾 Opportunity #{i}")
-        print(f"ID: {opp['id']}")
-        print(f"Title: {opp['title']}")
-        print(f"Description: {opp['description']}\n")
-        print("-" * 50)
+from scraper.eva_scraper import EvaScraper
+from agent.agent import EvaAgent
+from agent.filter_agent import filter_opportunities  # Optional
 
-if __name__ == "__main__":
-    main()
+# Load environment variables
+load_dotenv()
+
+# Initialize scraper
+scraper = EvaScraper()
+opps = scraper.parse_dump_file("data/page_dump.html")
+
+# Optional: filter results
+filtered_opps = filter_opportunities(opps)
+
+# Run the AI Agent
+agent = EvaAgent()
+agent.run(filtered_opps)
